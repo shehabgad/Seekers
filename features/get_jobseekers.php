@@ -1,5 +1,5 @@
 <?php
-require '../config/require_all_2.php';
+require_once '../config/require_all_2.php';
 
 $jobseekers = $userService->getJobseekers($_GET['industry'], $_GET['location'], $_GET['explevel']);
 if ($jobseekers) {

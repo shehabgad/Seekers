@@ -1,7 +1,7 @@
 <?php
-require("config/emoloyer_auth.php");
-require("Services/VacancyService/VacancyService.php");
-require("config/vacancyService.php");
+require_once("config/emoloyer_auth.php");
+require_once("Services/VacancyService/VacancyService.php");
+require_once("config/vacancyService.php");
 
 $vacancies = [];
 foreach ($_SESSION['user']['vacs'] as $vacancyID) {

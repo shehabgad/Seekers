@@ -1,5 +1,5 @@
 <?php
-include 'IVacancyService.php';
+require_once 'IVacancyService.php';
 class VacancyService implements IVacancyService
 {
   private $conn;

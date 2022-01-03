@@ -1,6 +1,6 @@
 <?php
-require 'config/require_all.php';
-require 'config/jobseeker_auth.php';
+require_once 'config/require_all.php';
+require_once 'config/jobseeker_auth.php';
 
 $vacancy = $vacancyService->getVacancy(intval($_GET['vacancy_id']));
 

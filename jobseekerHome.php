@@ -1,10 +1,10 @@
 <?php
-include 'config/jobseeker_auth.php';
-include 'Services/UserService/UserService.php';
-include 'Core/Users/User.php';
-include 'Core/Users/Employer.php';
-include 'Core/Users/JobSeeker.php';
-include 'config/userService.php';
+require_once 'config/jobseeker_auth.php';
+require_once 'Services/UserService/UserService.php';
+require_once 'Core/Users/User.php';
+require_once 'Core/Users/Employer.php';
+require_once 'Core/Users/JobSeeker.php';
+require_once 'config/userService.php';
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   if ($_POST["name"] != $_SESSION['user']['name']) {
     $_SESSION['user']['name'] = $_POST["name"];

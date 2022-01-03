@@ -1,5 +1,5 @@
 <?php
-include 'IUserService.php';
+require_once 'IUserService.php';
 class UserService implements IUserService
 {
   private $conn;

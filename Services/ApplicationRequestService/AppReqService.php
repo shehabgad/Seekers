@@ -1,5 +1,5 @@
 <?php
-include 'IAppReqService.php';
+require_once 'IAppReqService.php';
 class AppReqService implements IAppReqService
 {
   private $conn;

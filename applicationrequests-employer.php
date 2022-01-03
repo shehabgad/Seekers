@@ -1,6 +1,6 @@
 <?php
-include 'config/require_all.php';
-include 'config/emoloyer_auth.php';
+require_once 'config/require_all.php';
+require_once 'config/emoloyer_auth.php';
 $appreqIds = $_SESSION['user']['applicationRequests'];
 
 $applicationRequests = [];

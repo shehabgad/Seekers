@@ -1,14 +1,14 @@
 <?php
-require 'config/emoloyer_auth.php';
+require_once 'config/emoloyer_auth.php';
 
-require 'Services/UserService/UserService.php';
-require 'Services/VacancyService/VacancyService.php';
+require_once 'Services/UserService/UserService.php';
+require_once 'Services/VacancyService/VacancyService.php';
 
-require 'Core/Users/User.php';
-require 'Core/Users/Employer.php';
-require 'Core/Users/JobSeeker.php';
+require_once 'Core/Users/User.php';
+require_once 'Core/Users/Employer.php';
+require_once 'Core/Users/JobSeeker.php';
 
-require 'config/userService.php';
+require_once 'config/userService.php';
 $emailExist = false;
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   if ($_POST["name"] != $_SESSION['user']['name']) {

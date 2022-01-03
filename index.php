@@ -1,10 +1,10 @@
 <?php
-include 'config/is_loggedin.php';
-include 'Services/UserService/UserService.php';
-include 'Core/Users/User.php';
-include 'Core/Users/Employer.php';
-include 'Core/Users/JobSeeker.php';
-include 'config/userService.php';
+require_once 'config/is_loggedin.php';
+require_once 'Services/UserService/UserService.php';
+require_once 'Core/Users/User.php';
+require_once 'Core/Users/Employer.php';
+require_once 'Core/Users/JobSeeker.php';
+require_once 'config/userService.php';
 
 $AccountNotFound = false;
 if ($_SERVER["REQUEST_METHOD"] == "POST") {

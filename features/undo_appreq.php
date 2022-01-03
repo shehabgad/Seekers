@@ -1,6 +1,6 @@
 <?php
-include '../config/require_all_2.php';
-include '../config/jobseeker_auth.php';
+require_once '../config/require_all_2.php';
+require_once '../config/jobseeker_auth.php';
 $userID = $_SESSION['userID'];
 $appReqID = intval($_GET['appreq_id']);
 $appReq = $appReqService->getAppReq($appReqID);

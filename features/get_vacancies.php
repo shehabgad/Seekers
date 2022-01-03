@@ -1,8 +1,8 @@
 <?php
-require '../Core/Vacancy/IVacancy.php';
-require '../Core/Vacancy/Vacancy.php';
-require '../Services/VacancyService/VacancyService.php';
-require '../config/vacancyService.php';
+require_once '../Core/Vacancy/IVacancy.php';
+require_once '../Core/Vacancy/Vacancy.php';
+require_once '../Services/VacancyService/VacancyService.php';
+require_once '../config/vacancyService.php';
 
 $vacancies = $vacancyService->getVacancies($_GET['searchTitle']);
 if ($vacancies) {

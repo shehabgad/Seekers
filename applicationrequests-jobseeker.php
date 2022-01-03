@@ -1,7 +1,7 @@
 <?php
 
-include 'config/jobseeker_auth.php';
-include 'config/require_all.php';
+require_once 'config/jobseeker_auth.php';
+require_once 'config/require_all.php';
 $appreqIds = $_SESSION['user']['applicationRequests'];
 
 $applicationRequests = [];
